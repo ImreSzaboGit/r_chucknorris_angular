@@ -1,0 +1,4 @@
+<span class="categories-title">Categories</span>
+<ul class="categories-list">
+  <li (click)="onSelectedCategory($event)" class="categories-list-item" *ngFor="let category of categories | async">{{category}}</li>
+</ul>

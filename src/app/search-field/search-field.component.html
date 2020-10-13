@@ -1,0 +1,4 @@
+<input (input)="onSearchInput($event)" class="search-field" type="search" placeholder="...min 4 chars...">
+<ul *ngIf="searchedJokes" class="searched-list">
+  <li *ngFor="let joke of searchedJokes" class="list-element">{{joke.value}}</li>
+</ul>

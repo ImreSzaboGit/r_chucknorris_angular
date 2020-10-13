@@ -1,0 +1,105 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+:root{
+  --base-color: #37e0d0;
+  color: #444444;
+  max-width: 600px;
+  margin: auto;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.toolbar-root{
+  width: 100%;
+  background: var(--base-color);
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.joke-content-wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+app-categories{
+  width: 30%;
+  border: solid;
+  border-color: var(--base-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categories-title{
+  font-size: large;
+  text-transform: uppercase;
+}
+
+.categories-list{
+  list-style-type: none;
+  padding: 0;
+  font-size: medium;
+  font-variant: petite-caps;
+  text-transform: capitalize;
+  width: 80%;
+  text-align: center;
+}
+
+.categories-list-item{
+  margin-bottom: 4px;
+}
+
+.categories-list-item:hover{
+  background-color: var(--base-color);
+  cursor: pointer;
+}
+
+app-random-joke{
+  width: 67%;
+  border: solid;
+  border-color: var(--base-color);
+  border-radius: 5px;
+  font-size: x-large;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+app-search-field{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.search-field{
+  width: 40%;
+  margin: auto auto 5px;
+  text-align: center;
+  border: solid;
+  border-color: var(--base-color);
+  border-radius: 5px;
+}
+
+.searched-list{
+  width: 90%;
+  height: 200px;
+  overflow: auto;
+  margin: auto;
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-element{
+  width: 95%;
+  border-bottom: solid;
+  border-color: var(--base-color);
+  border-radius: 5px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
